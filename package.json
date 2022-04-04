@@ -1,0 +1,37 @@
+{
+  "name": "metrontest2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roddoark/metronTest2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roddoark/metronTest2/issues"
+  },
+  "homepage": "https://github.com/Roddoark/metronTest2#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "style-loader": "^3.3.1"
+  }
+}
