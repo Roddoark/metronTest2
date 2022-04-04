@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './App.css';
+import SubTitle from '../src/components/SubTitle'
 
 const App = ({ title }) => {
   const onClick = (e) => {
@@ -12,6 +13,7 @@ const App = ({ title }) => {
       <h1 class="title">{title}</h1>
       <p id="sok">metronTest</p>
 
+      <SubTitle />
       <form>
         <div>
           <input className='' type="text" />
