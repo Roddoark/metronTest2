@@ -10,7 +10,9 @@ const App = ({ title }) => {
 
   const onClick = (e) => {
     e.preventDefault();
-    console.log('okokokokokokokoko')
+    console.log(firstWord)
+
+    setFirstWord(firstWord)
   }
   return (
     <div>
@@ -31,6 +33,8 @@ const App = ({ title }) => {
         <button onClick={onClick}>GO</button>
         <button>Reset</button>
       </form>
+
+      {firstWord}
     </div>
   )
 }
