@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState} from 'react'
+
 import './App.css';
+import Tweets from './components/Tweets/Tweets';
 
 const App = ({ title }) => {
   const [firstWord, setFirstWord] = useState("");
   const [secondWord, setSecondWord] = useState("");
 
-  const [firstTweets, setFirstTweets] = useState({ tweets: [] });
-  const [secondTweets, setSecondTweets] = useState({ tweets: [] });
-
   const onClick = (e) => {
     e.preventDefault();
     console.log(firstWord)
-
+    console.log(secondWord)
     setFirstWord(firstWord)
   }
+
   return (
     <div>
       <h1 className="title">{title}</h1>
-      <p id="sok">metronTest</p>
-
       <form>
         <div>
           <input type="text" name="firstWord" id="firstWord" placeholder="React"
@@ -34,7 +32,8 @@ const App = ({ title }) => {
         <button>Reset</button>
       </form>
 
-      {firstWord}
+        <Tweets />
+
     </div>
   )
 }
