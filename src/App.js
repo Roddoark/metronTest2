@@ -11,7 +11,6 @@ const App = ({ title }) => {
     e.preventDefault();
     console.log(firstWord)
     console.log(secondWord)
-    setFirstWord(firstWord)
   }
 
   return (
